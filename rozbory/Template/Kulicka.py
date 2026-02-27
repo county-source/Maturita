@@ -62,24 +62,24 @@ AUTHOR_KV = [
     ("N\u00e1rodnost:", "Francouzsk\u00fd spisovatel, novin\u00e1\u0159 a dramatik"),
     ("P\u016fvod:", "Narozen na z\u00e1mku Miromesnil v Normandii. Poch\u00e1zel ze z\u00e1mo\u017en\u00e9 rodiny, rodi\u010de se rozvedli"),
     ("Vzd\u011bl\u00e1n\u00ed:", "Studoval pr\u00e1va v Pa\u0159\u00ed\u017ei, studia p\u0159eru\u0161il prusko-francouzskou v\u00e1lkou (1870\u20131871)"),
-    ("Mentor:", "Gustave Flaubert \u2013 p\u0159\u00edtel rodiny, u\u010dil Maupassanta ps\u00e1t. Nov\u00fdm se stal a\u017e po 10 letech tr\u00e9ninku"),
+    ("Mentor:", "Gustave Flaubert \u2013 p\u0159\u00edtel rodiny, u\u010dil Maupassanta ps\u00e1t. Slavn\u00fdm se stal a\u017e po 10 letech tr\u00e9ninku"),
     ("Kari\u00e9ra:", "\u00da\u0159edn\u00edk na ministerstvu, od 1880 (po \u00fasp\u011bchu Kuli\u010dky) se v\u011bnoval jen ps\u00e1n\u00ed"),
     ("Styl:", "Mistr kr\u00e1tk\u00e9 pov\u00eddky \u2013 napsal jich p\u0159es 300. Realismus, p\u0159esn\u00fd popis, psychologie postav"),
     ("Smrt:", "Trp\u011bl syfilidou, psychick\u00fdmi poruchami. Pokus o sebevra\u017edu 1892. Zem\u0159el 1893 v \u00fastavu v Pa\u0159\u00ed\u017ei"),
 ]
 AUTHOR_WORKS = [
     "<b>Mil\u00e1\u010dek</b> (1885) \u2013 rom\u00e1n o karieristovi, kter\u00fd vyu\u017e\u00edv\u00e1 \u017eeny k spole\u010densk\u00e9mu vzestupu",
-    "<b>Petre\u010dek</b> (1883) \u2013 rom\u00e1n, \u0159e\u0161\u00ed podstatu otcovstv\u00ed a d\u011bdicov\u00ed",
-    "<b>Sl\u00e1va a b\u00edda kurtiz\u00e1n</b> \u2013 pov\u00eddkov\u00fd soubor, pov\u00eddky ze spole\u010dnosti",
+    "<b>Petr a Jan</b> (1888) \u2013 rom\u00e1n o dvou bratrech, \u0159e\u0161\u00ed podstatu otcovstv\u00ed a d\u011bdictv\u00ed",
+    "<b>Sle\u010dna Fifi</b> (1882) \u2013 pov\u00eddkov\u00fd soubor z prusko-francouzsk\u00e9 v\u00e1lky",
     "<b>Horla</b> (1887) \u2013 hororov\u00e1 pov\u00eddka, t\u00e9ma \u0161\u00edlenstv\u00ed a paranoia",
 ]
 
 BASIC_INFO = [
     ("Lit. druh:", "Epika (pr\u00f3za)"),
-    ("Lit. \u017e\u00e1nr:", "Nov\u00e9la (kr\u00e1tk\u00e1 pov\u00eddka s pointou)"),
+    ("Lit. \u017e\u00e1nr:", "Novela (kr\u00e1tk\u00e1 pov\u00eddka s pointou)"),
     ("T\u00e9ma:", "Pokrytectv\u00ed m\u011b\u0161\u0165\u00e1ck\u00e9 spole\u010dnosti \u2013 lid\u00e9 pohrdaj\u00ed prostitutkou, ale sami jsou mor\u00e1ln\u011b hor\u0161\u00ed"),
     ("\u010casoprostor:", "Normandie (Rouen \u2192 Le Havre), zima 1870\u20131871, prusko-francouzsk\u00e1 v\u00e1lka"),
-    ("Vyd\u00e1no:", "1880 \u2013 prvn\u00ed velk\u00fd \u00fasp\u011bch Maupassanta, sou\u010d\u00e1st sb\u00edrky Me\u0161danick\u00e9 ve\u010dery"),
+    ("Vyd\u00e1no:", "1880 \u2013 prvn\u00ed velk\u00fd \u00fasp\u011bch Maupassanta, sou\u010d\u00e1st sb\u00edrky Medansk\u00e9 ve\u010dery"),
 ]
 
 COMPOSITION_KV = [
@@ -90,17 +90,17 @@ COMPOSITION_KV = [
 COMPOSITION_BULLETS = [
     "<b>Realismus</b> \u2013 p\u0159esn\u00fd, detailn\u00ed popis postav, prost\u0159ed\u00ed a situac\u00ed",
     "<b>Ironie a satira</b> \u2013 vypr\u00e1v\u011b\u010d ironicky komentuje pokrytectv\u00ed m\u011b\u0161\u0165\u00e1k\u016f",
-    "<b>Kontrast</b> \u2013 prostitu\u010dka je mor\u00e1ln\u011b nadřazen\u00e1 (ob\u011btavost) vs. m\u011b\u0161\u0165\u00e1ci (pokrytci)",
+    "<b>Kontrast</b> \u2013 prostitutka je mor\u00e1ln\u011b nadřazen\u00e1 (ob\u011btavost) vs. m\u011b\u0161\u0165\u00e1ci (pokrytci)",
     "<b>Symbolika</b> \u2013 dostavn\u00edk jako mikrokosmos spole\u010dnosti, j\u00eddlo jako symbol solidarity/v\u010d\u011b\u010dnosti",
     "<b>Pointa</b> \u2013 z\u00e1v\u011bre\u010dn\u00e1 sc\u00e9na vyhrocuje pokrytectv\u00ed \u2013 Kuli\u010dka pl\u00e1\u010de, ostatn\u00ed j\u00ed pohrdaj\u00ed",
 ]
 TIP_TEXT = "D\u016fle\u017eit\u00e9 je pochopit kontrast: Kuli\u010dka je prostitutka, ale z\u00e1rove\u0148 nejslu\u0161n\u011bj\u0161\u00ed a nejob\u011btav\u011bj\u0161\u00ed postava. M\u011b\u0161\u0165\u00e1ci, kte\u0159\u00ed j\u00ed pohrdaj\u00ed, jsou pokrytci \u2013 vyu\u017eij\u00ed ji a pak se od n\u00ed odvrátí. Maupassant tím kritizuje celou spole\u010dnost."
 
-MAIN_CHAR_1 = ("Kuli\u010dka", "Al\u017eb\u011bta Roussetov\u00e1, p\u0159ezd\u00edvan\u00e1 Kuli\u010dka \u2013 prostitutka, ale <b>nejob\u011btav\u011bj\u0161\u00ed a nejslu\u0161n\u011bj\u0161\u00ed</b> postava. Baculat\u00e1, p\u0159\u00edv\u011btiv\u00e1, vlastenka (nen\u00e1vid\u00ed Prusy). Sd\u00edl\u00ed j\u00eddlo s cestuj\u00edc\u00edmi, ob\u011btuje se kdy\u017e je ti\u0161\u00ed k prusk\u00e9mu d\u016fstojn\u00edkovi. Nakonec je ostatn\u00edmi ponížena a opu\u0161t\u011bna.")
+MAIN_CHAR_1 = ("Kuli\u010dka", "Al\u017eb\u011bta Roussetov\u00e1, p\u0159ezd\u00edvan\u00e1 Kuli\u010dka \u2013 prostitutka, ale <b>nejob\u011btav\u011bj\u0161\u00ed a nejslu\u0161n\u011bj\u0161\u00ed</b> postava. Baculat\u00e1, p\u0159\u00edv\u011btiv\u00e1, vlastenka (nen\u00e1vid\u00ed Prusy). Sd\u00edl\u00ed j\u00eddlo s cestuj\u00edc\u00edmi, ob\u011btuje se kdy\u017e je tla\u010d\u00ed k prusk\u00e9mu d\u016fstojn\u00edkovi. Nakonec je ostatn\u00edmi ponížena a opu\u0161t\u011bna.")
 MAIN_CHAR_2 = ("Prusk\u00fd d\u016fstojn\u00edk", "Bezejmenn\u00fd prusk\u00fd d\u016fstojn\u00edk, kter\u00fd zadr\u017euje dostavn\u00edk v hostinci a <b>po\u017eaduje noc s Kuli\u010dkou</b>. Dokud mu nevyhov\u00ed, nikdo nesm\u00ed pokra\u010dovat v cest\u011b. Zosobn\u011bn\u00ed okupantsk\u00e9 moci a ponížen\u00ed.")
 
 SIDE_CHARACTERS = [
-    ("Pan Loiseau", "Obchodn\u00edk s v\u00ednem. Lakomc, vulg\u00e1rn\u00ed, ale praktick\u00fd. Tlac\u00ed Kuli\u010dku k ustoupen\u00ed"),
+    ("Pan Loiseau", "Obchodn\u00edk s v\u00ednem. Lakomec, vulg\u00e1rn\u00ed, ale praktick\u00fd. Tla\u010d\u00ed Kuli\u010dku k ustoupen\u00ed"),
     ("Man\u017eel\u00e9 Carr\u00e9-Lamadonovi", "Fabrikant s man\u017eelkou \u2013 vy\u0161\u0161\u00ed spole\u010dnost. P\u0159etvá\u0159ka, pokrytectv\u00ed ve vy\u0161\u0161\u00ed form\u011b"),
     ("Hrab\u011b a hrab\u011bnka de Br\u00e9ville", "\u0160lechta \u2013 zdánliv\u011b u\u0161lechtil\u00ed, ale sou\u010dinní s n\u00e1tlakem na Kuli\u010dku"),
     ("Cornudet", "Demokrat, liberál. Jediný, kdo se nepodílí na nátlaku na Kuličku. Tichý pozorovatel"),
@@ -120,7 +120,7 @@ THEMES = [
     "<b>Kontrast skutečn\u00e9 a zdánliv\u00e9 mravnosti</b> \u2013 prostitutka je ob\u011btav\u011bj\u0161\u00ed ne\u017e zbo\u017en\u00e1 \u0161lechta",
     "<b>Vyu\u017e\u00edv\u00e1n\u00ed slabších</b> \u2013 cestuj\u00edc\u00ed Kuli\u010dku vyu\u017eij\u00ed (jídlo, ob\u011b\u0165) a pak zahodí",
     "<b>Vlastenectv\u00ed</b> \u2013 Kuli\u010dka odm\u00edt\u00e1 Prusa z vlastenectv\u00ed, m\u011b\u0161\u0165\u00e1ci vlastenectv\u00ed p\u0159edstíraj\u00ed",
-    "<b>Kritika v\u00e1lky</b> \u2013 v\u00e1lka obnažuje pravou pova\u0159u lid\u00ed, ni\u010d\u00ed lidskou d\u016fstojnost",
+    "<b>Kritika v\u00e1lky</b> \u2013 v\u00e1lka obnažuje pravou povahu lid\u00ed, ni\u010d\u00ed lidskou d\u016fstojnost",
 ]
 
 CONTEXT_BULLETS = [
@@ -139,7 +139,7 @@ CONTEXT_TABLE = [
 
 QUICK_REVIEW = [
     ("Autor", "Guy de Maupassant (1850\u20131893), francouzsk\u00fd spisovatel"),
-    ("\u017d\u00e1nr", "Nov\u00e9la (kr\u00e1tk\u00e1 pov\u00eddka s pointou)"),
+    ("\u017d\u00e1nr", "Novela (kr\u00e1tk\u00e1 pov\u00eddka s pointou)"),
     ("Sm\u011br", "Realismus / naturalismus (2. pol. 19. stol.)"),
     ("Druh", "Epika (pr\u00f3za)"),
     ("Vypr\u00e1v\u011b\u010d", "Er-forma (v\u0161ev\u011bdouc\u00ed, ironick\u00fd)"),
