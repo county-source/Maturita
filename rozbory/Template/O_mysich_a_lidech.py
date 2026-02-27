@@ -89,7 +89,7 @@ COMPOSITION_KV = [
     ("Promluvy:", "P\u0159\u00edm\u00e1 \u0159e\u010d (dialogy d\u011bln\u00edk\u016f), nespisovn\u00fd jazyk, slang"),
 ]
 COMPOSITION_BULLETS = [
-    "<b>Realismus</b> \u2013 v\u011brn\u00fd obraz \u017eivota s\u00e9z\u00f3nn\u00edch d\u011bln\u00edk\u016f za hospod\u00e1\u0159sk\u00e9 krize",
+    "<b>Realismus</b> \u2013 v\u011brn\u00fd obraz \u017eivota sez\u00f3nn\u00edch d\u011bln\u00edk\u016f za hospod\u00e1\u0159sk\u00e9 krize",
     "<b>Symbolika</b> \u2013 my\u0161i a kr\u00e1l\u00edci = k\u0159ehkost sn\u016f; \u0159eka na za\u010d\u00e1tku i konci = kruhov\u00e1 kompozice",
     "<b>Kontrast</b> \u2013 sny (farma, kr\u00e1l\u00edci) vs. drsn\u00e1 realita; fyzick\u00e1 s\u00edla Lennieho vs. jeho du\u0161evn\u00ed prostota",
     "<b>Dramati\u010dnost</b> \u2013 d\u011bj sp\u011bje k nevyhnuteln\u00e9 trag\u00e9dii, nap\u011bt\u00ed graduje",
@@ -101,19 +101,19 @@ MAIN_CHAR_1 = ("George Milton", "Mal\u00fd, chytr\u00fd, <b>ob\u011btav\u00fd</b
 MAIN_CHAR_2 = ("Lennie Small", "Obrovsk\u00fd, fyzicky siln\u00fd, ale <b>du\u0161evn\u011b zaostal\u00fd</b>. Dobr\u00e1ck\u00fd, naivn\u00ed, pracovit\u00fd. R\u00e1d hlad\u00ed m\u011bkk\u00e9 v\u011bci (my\u0161i, \u0161t\u011b\u0148ata, vlasy) \u2013 ale svou silou je zab\u00edj\u00ed. Sn\u00ed o vlastn\u00edch kr\u00e1l\u00edc\u00edch. Nechtěn\u011b zab\u00edj\u00ed Curleyovu \u017eenu.")
 
 SIDE_CHARACTERS = [
-    ("Curley", "\u0160\u00e9f\u016fv syn \u2013 agresivn\u00ed, \u017e\u00e1rliv\u00fd, namy\u0161len\u00fd. Vyvol\u00e1v\u00e1 konflikty, Lennie mu rozdr\u00e1\u017ed\u00ed ruku"),
-    ("Curleyova \u017eena", "Kr\u00e1sn\u00e1, osamel\u00e1, vyz\u00fdvav\u00e1. Nen\u00e1vid\u00ed sv\u016fj \u017eivot. Lennie j\u00ed omylem zlom\u00ed vaz"),
+    ("Curley", "\u0160\u00e9f\u016fv syn \u2013 agresivn\u00ed, \u017e\u00e1rliv\u00fd, namy\u0161len\u00fd. Vyvol\u00e1v\u00e1 konflikty, Lennie mu rozdrt\u00ed ruku"),
+    ("Curleyova \u017eena", "Kr\u00e1sn\u00e1, osam\u011bl\u00e1, vyz\u00fdvav\u00e1. Nen\u00e1vid\u00ed sv\u016fj \u017eivot. Lennie j\u00ed omylem zlom\u00ed vaz"),
     ("Slim", "Respektovan\u00fd p\u0159edák. Moudr\u00fd, spravedliv\u00fd. Pochop\u00ed George\u016fv \u010din na konci"),
     ("Candy", "Star\u00fd d\u011bln\u00edk s amputovanou rukou. Chce se p\u0159ipojit ke George\u016fvu snu o farm\u011b"),
-    ("Crooks", "\u010cerno\u0161sk\u00fd pod\u0161\u00edvák. \u017dije odděleně, ob\u011b\u0165 rasismu. Inteligentní, ale zatrpkl\u00fd"),
+    ("Crooks", "\u010cerno\u0161sk\u00fd \u010deled\u00edn. \u017dije odděleně, ob\u011b\u0165 rasismu. Inteligentní, ale zatrpkl\u00fd"),
 ]
 
 PLOT_BLOCKS = [
-    ("P\u0159\u00edchod na ran\u010d", "George a Lennie, dva putuj\u00edc\u00ed d\u011bln\u00edci, sm\u011b\u0159uj\u00ed na ran\u010d v Salinaském \u00fadol\u00ed, kde maj\u00ed dom\u00edvku pr\u00e1ci. Lennie m\u00e1 po kaps\u00e1ch mrtvou myš \u2013 r\u00e1d hlad\u00ed m\u011bkk\u00e9 v\u011bci, ale svou silou je zab\u00edj\u00ed. George mu sl\u00edbil, \u017ee a\u017e vyd\u011blaj\u00ed dostatek pen\u011bz, koup\u00ed si vlastn\u00ed farmu a Lennie se bude starat o kr\u00e1l\u00edky."),
-    ("Sezn\u00e1men\u00ed s ran\u010dem", "Na ran\u010di potkaj\u00ed nepříjemn\u00e9ho \u0161\u00e9fova syna Curleyho, jeho kr\u00e1snou ale osamelou \u017eenu, moudr\u00e9ho předáka Slima, star\u00e9ho Candyho a \u010derno\u0161sk\u00e9ho pod\u0161\u00edváka Crookse. George zak\u00e1\u017ee Lenniemu mluvit \u2013 aby si nikdo nev\u0161iml jeho du\u0161evn\u00edho handicapu."),
-    ("Rozdrcenou ruka", "Agresivn\u00ed Curley se do Lennieho pust\u00ed. Lennie mu v sebeobraně sev\u0159e p\u011bst a svou obrovskou silou mu <b>rozdr\u00e1\u017ed\u00ed ruku</b>. Candy se nab\u00eddne, \u017ee přidá sv\u00e9 \u00faspory ke George\u016fvu snu o farm\u011b \u2013 na chv\u00edli se zd\u00e1, \u017ee sen se m\u016f\u017ee splnit."),
+    ("P\u0159\u00edchod na ran\u010d", "George a Lennie, dva putuj\u00edc\u00ed d\u011bln\u00edci, sm\u011b\u0159uj\u00ed na ran\u010d v Salinaském \u00fadol\u00ed, kde maj\u00ed domluvenou pr\u00e1ci. Lennie m\u00e1 po kaps\u00e1ch mrtvou myš \u2013 r\u00e1d hlad\u00ed m\u011bkk\u00e9 v\u011bci, ale svou silou je zab\u00edj\u00ed. George mu sl\u00edbil, \u017ee a\u017e vyd\u011blaj\u00ed dostatek pen\u011bz, koup\u00ed si vlastn\u00ed farmu a Lennie se bude starat o kr\u00e1l\u00edky."),
+    ("Sezn\u00e1men\u00ed s ran\u010dem", "Na ran\u010di potkaj\u00ed nepříjemn\u00e9ho \u0161\u00e9fova syna Curleyho, jeho kr\u00e1snou ale osam\u011blou \u017eenu, moudr\u00e9ho předáka Slima, star\u00e9ho Candyho a \u010derno\u0161sk\u00e9ho \u010deled\u00edna Crookse. George zak\u00e1\u017ee Lenniemu mluvit \u2013 aby si nikdo nev\u0161iml jeho du\u0161evn\u00edho handicapu."),
+    ("Rozdrcen\u00e1 ruka", "Agresivn\u00ed Curley se do Lennieho pust\u00ed. Lennie mu v sebeobraně sev\u0159e p\u011bst a svou obrovskou silou mu <b>rozdrt\u00ed ruku</b>. Candy se nab\u00eddne, \u017ee přidá sv\u00e9 \u00faspory ke George\u016fvu snu o farm\u011b \u2013 na chv\u00edli se zd\u00e1, \u017ee sen se m\u016f\u017ee splnit."),
     ("Smrt \u0161t\u011bn\u011bte a Curleyovy \u017eeny", "Lennie dostane od Slima \u0161t\u011bn\u011b, ale svou silou ho zab\u00edj\u00ed. Pak za n\u00edm p\u0159ijde Curleyova \u017eena. Nab\u00eddne mu, aby j\u00ed pohladil vlasy. Lennie hlad\u00ed p\u0159\u00edli\u0161 silně, Curleyova \u017eena za\u010dne k\u0159i\u010det. Lennie se lekne, zacpe j\u00ed pusu a <b>omylem j\u00ed zlom\u00ed vaz</b>. Ut\u00edká pry\u010d."),
-    ("Tragick\u00fd z\u00e1v\u011br", "Kdy\u017e ostatn\u00ed najdou mrtvou Curleyovu \u017eenu, cel\u00fd ran\u010d se vyd\u00e1 Lennieho hledat. Curley chce pomstu. Jen George v\u00ed, kam se Lennie schoval (u \u0159eky, kde příb\u011bh za\u010dal). George p\u0159ijde za Lenním, vypr\u00e1v\u00ed mu o farm\u011b a kr\u00e1l\u00edc\u00edch a <b>zast\u0159el\u00ed ho</b> \u2013 akt milosrdenstv\u00ed, aby ho ušet\u0159il lyn\u010dov\u00e1n\u00ed."),
+    ("Tragick\u00fd z\u00e1v\u011br", "Kdy\u017e ostatn\u00ed najdou mrtvou Curleyovu \u017eenu, cel\u00fd ran\u010d se vyd\u00e1 Lennieho hledat. Curley chce pomstu. Jen George v\u00ed, kam se Lennie schoval (u \u0159eky, kde příb\u011bh za\u010dal). George p\u0159ijde za Lenniem, vypr\u00e1v\u00ed mu o farm\u011b a kr\u00e1l\u00edc\u00edch a <b>zast\u0159el\u00ed ho</b> \u2013 akt milosrdenstv\u00ed, aby ho ušet\u0159il lyn\u010dov\u00e1n\u00ed."),
 ]
 
 THEMES = [
@@ -121,14 +121,14 @@ THEMES = [
     "<b>Nedosa\u017eiteln\u00fd americk\u00fd sen</b> \u2013 vlastn\u00ed farma a kr\u00e1l\u00edci z\u016fstanou navždy snem",
     "<b>Osamělost</b> \u2013 ka\u017ed\u00e1 postava je n\u011bjak osaměl\u00e1 (Curleyova \u017eena, Crooks, Candy)",
     "<b>S\u00edla a k\u0159ehkost</b> \u2013 Lennieho obrovská s\u00edla vs. k\u0159ehkost my\u0161\u00ed, \u0161t\u011b\u0148at, lid\u00ed",
-    "<b>Rasismus a vyk\u00e1záni</b> \u2013 Crooks \u017eije oddělený, na okraji spole\u010dnosti",
+    "<b>Rasismus a vyk\u00e1z\u00e1n\u00ed</b> \u2013 Crooks \u017eije oddělený, na okraji spole\u010dnosti",
     "<b>Milosrdenstv\u00ed vs. n\u00e1sil\u00ed</b> \u2013 George\u016fv \u010din na konci \u2013 vra\u017eda nebo akt l\u00e1sky?",
 ]
 
 CONTEXT_BULLETS = [
     "<b>Americk\u00e1 meziv\u00e1le\u010dn\u00e1 literatura</b> \u2013 30. l\u00e9ta 20. stolet\u00ed, hospod\u00e1\u0159sk\u00e1 krize (Velk\u00e1 deprese)",
     "Realismus \u2013 autenti\u010dt\u00ed hrdinov\u00e9, drsn\u00fd jazyk, \u017e\u00e1dn\u00e1 idealizace",
-    "Ztracen\u00e1 generace \u2013 auto\u0159i poznamenaní 1. svět. v\u00e1lkou, zt\u00e1ta ide\u00e1l\u016f",
+    "Ztracen\u00e1 generace \u2013 auto\u0159i poznamenaní 1. svět. v\u00e1lkou, ztr\u00e1ta ide\u00e1l\u016f",
     "Steinbeck = hlas chud\u00fdch \u2013 zobrazuje \u017eivot farm\u00e1\u0159\u016f a d\u011bln\u00edk\u016f v Kalifornii",
 ]
 CONTEXT_TABLE = [
