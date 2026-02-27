@@ -52,7 +52,7 @@ W = PAGE_W - 2*MARGIN
 # ============================================================
 # DATA
 # ============================================================
-OUTPUT_FILE = "/home/jakub/Maturita/moje-rozbory/Ostre_sledovane_vlaky_rozbor.pdf"
+OUTPUT_FILE = "/home/jakub/Maturita/rozbory/moje-rozbory/Ostre_sledovane_vlaky_rozbor.pdf"
 
 TITLE = "OSTŘE SLEDOVANÉ VLAKY"
 AUTHOR_SUBTITLE = "Bohumil Hrabal"

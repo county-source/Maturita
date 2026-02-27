@@ -1,15 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-ŠABLONA – Literární rozbor cheat sheet (maturita)
-==================================================
-Tento skript generuje 3stránkové PDF rozbory literárních děl.
-Stačí vyplnit DATA sekci dole a spustit.
-
-Výstup: A4 PDF, DejaVu fonty, 8barevná paleta, ReportLab.
-Struktura: Header → Autor → Základní údaje → Kompozice a jazyk → TIP →
-           Postavy (2 hlavní boxy + tabulka) → Děj (bloky) →
-           Hlavní myšlenky → Literární kontext + tabulka → Rychlý přehled
+ROZBOR – Farma zvířat (George Orwell)
 """
 
 from reportlab.lib.pagesizes import A4
@@ -25,7 +17,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 import os
 
 # ============================================================
-# FONTY – DejaVu (podpora češtiny)
+# FONTY
 # ============================================================
 fd = "/usr/share/fonts/TTF/"
 pdfmetrics.registerFont(TTFont('DJ', os.path.join(fd, 'DejaVuSans.ttf')))
@@ -33,22 +25,22 @@ pdfmetrics.registerFont(TTFont('DJB', os.path.join(fd, 'DejaVuSans-Bold.ttf')))
 pdfmetrics.registerFont(TTFont('DJI', os.path.join(fd, 'DejaVuSans-Oblique.ttf')))
 
 # ============================================================
-# BARVY – 8 sekcí, každá má tmavou + světlou variantu
+# BARVY
 # ============================================================
-C_HEADER = HexColor('#212121')       # Hlavička dokumentu (tmavě šedá/černá)
-C_GOLD = HexColor('#e2e2e2')         # Podtitulek v hlavičce
+C_HEADER = HexColor('#212121')
+C_GOLD = HexColor('#e2e2e2')
 
-C_INDIGO = HexColor('#283593');    C_INDIGO_L = HexColor('#e8eaf6')   # AUTOR
-C_BLUE = HexColor('#1565c0');      C_BLUE_L = HexColor('#e3f2fd')     # ZÁKLADNÍ ÚDAJE
-C_TEAL = HexColor('#00897b');      C_TEAL_L = HexColor('#e0f2f1')     # KOMPOZICE A JAZYK
-C_PURPLE = HexColor('#7b1fa2');    C_PURPLE_L = HexColor('#f3e5f5')   # POSTAVY
-C_RED = HexColor('#c62828');       C_RED_L = HexColor('#ffebee')      # DĚJ
-C_GREEN = HexColor('#2e7d32');     C_GREEN_L = HexColor('#e8f5e9')    # HLAVNÍ MYŠLENKY
-C_ORANGE = HexColor('#e65100');    C_ORANGE_L = HexColor('#fff3e0')   # LITERÁRNÍ KONTEXT
-C_DARK = HexColor('#212121');      C_DARK_L = HexColor('#f5f5f5')     # RYCHLÝ PŘEHLED
+C_INDIGO = HexColor('#283593');    C_INDIGO_L = HexColor('#e8eaf6')
+C_BLUE = HexColor('#1565c0');      C_BLUE_L = HexColor('#e3f2fd')
+C_TEAL = HexColor('#00897b');      C_TEAL_L = HexColor('#e0f2f1')
+C_PURPLE = HexColor('#7b1fa2');    C_PURPLE_L = HexColor('#f3e5f5')
+C_RED = HexColor('#c62828');       C_RED_L = HexColor('#ffebee')
+C_GREEN = HexColor('#2e7d32');     C_GREEN_L = HexColor('#e8f5e9')
+C_ORANGE = HexColor('#e65100');    C_ORANGE_L = HexColor('#fff3e0')
+C_DARK = HexColor('#212121');      C_DARK_L = HexColor('#f5f5f5')
 
-C_GRAY = HexColor('#e0e0e0')          # Oddělovací čáry v tabulkách
-C_TIP_BG = HexColor('#fffde7');    C_TIP_BD = HexColor('#fbc02d')     # TIP box
+C_GRAY = HexColor('#e0e0e0')
+C_TIP_BG = HexColor('#fffde7');    C_TIP_BD = HexColor('#fbc02d')
 
 # ============================================================
 # ROZMĚRY
@@ -58,122 +50,114 @@ MARGIN = 12*mm
 W = PAGE_W - 2*MARGIN
 
 # ============================================================
-# ████████████████████████████████████████████████████████████
-# ████  DATA – ZDE VYPLŇ OBSAH PRO KONKRÉTNÍ DÍLO  ██████████
-# ████████████████████████████████████████████████████████████
+# DATA
 # ============================================================
+OUTPUT_FILE = "/home/jakub/Maturita/rozbory/moje-rozbory/Farma_zvirat_rozbor.pdf"
 
-# --- Výstupní soubor ---
-OUTPUT_FILE = "/home/jakub/Maturita/moje-rozbory/XX_Nazev_rozbor.pdf"
+TITLE = "FARMA ZVÍŘAT"
+AUTHOR_SUBTITLE = "George Orwell"
 
-# --- Hlavička ---
-TITLE = "NÁZEV DÍLA"           # velký nadpis
-AUTHOR_SUBTITLE = "Jméno Autora"  # kurzívou pod nadpisem
-
-# --- Sekce AUTOR ---
-AUTHOR_SECTION_TITLE = "AUTOR – JMÉNO AUTORA (rok–rok)"
+AUTHOR_SECTION_TITLE = "AUTOR – GEORGE ORWELL (1903–1950)"
 AUTHOR_KV = [
-    # (klíč, hodnota) – podporuje <b>tučné</b> v hodnotě
-    ("Národnost:", "..."),
-    ("Vzdělání:", "..."),
-    ("Kariéra:", "..."),
-    ("Osobní:", "..."),
-    ("Smrt:", "..."),
-    ("Zajímavost:", "..."),
+    ("Národnost:", "Britský spisovatel, novinář a esejista"),
+    ("Původ:", "Narozen v Mótihári (Britská Indie) jako Eric Arthur Blair. Otec úředník koloniální správy"),
+    ("Vzdělání:", "Stipendium na Etonu (prestižní škola). Po škole nešel na univerzitu – vstoupil k policii v Barmě"),
+    ("Kariéra:", "1922–1927 koloniální policie v Barmě → znechucení imperialismem. Pak žil v bídě v Paříži a Londýně, psal reportáže"),
+    ("Šp. válka:", "1936 bojoval ve Španělské občanské válce proti fašismu. Zraněn střelou do krku. Zážitky → Hold Katalánsku"),
+    ("Pseudonym:", "George Orwell – zvolil si ho 1933 (řeka Orwell v Anglii). Vlastní jméno: Eric Arthur Blair"),
+    ("Smrt:", "1950 zemřel na tuberkulózu v Londýně, ve věku 46 let"),
 ]
 AUTHOR_WORKS = [
-    # bullet pointy s dalšími díly, <b>tučné</b> pro kategorie
-    "<b>Dramata:</b> ...",
-    "<b>Romány:</b> ...",
-    "<b>Povídky:</b> ...",
+    "<b>Na dně v Paříži a Londýně</b> (1933) – reportáž o životě v bídě",
+    "<b>Hold Katalánsku</b> (1938) – zážitky z občanské války ve Španělsku",
+    "<b>1984</b> (1949) – antiutopický román, totální kontrola, Velký Bratr",
+    "<b>Barmské dny</b> (1934) – román o koloniální Barmě",
 ]
 
-# --- Sekce ZÁKLADNÍ ÚDAJE ---
 BASIC_INFO = [
-    ("Lit. druh:", "Epika / Drama / Lyrika"),
-    ("Lit. žánr:", "..."),
-    ("Téma:", "..."),
-    ("Časoprostor:", "..."),
-    ("Vydáno:", "rok, okolnosti"),
+    ("Lit. druh:", "Epika (próza)"),
+    ("Lit. žánr:", "Alegorická bajka / antiutopický román (satirická novela)"),
+    ("Téma:", "Kritika totalitarismu – revoluce, která zradí vlastní ideály; zvířata svrhnou farmáře, ale prasata se stanou horšími tyrani"),
+    ("Časoprostor:", "Panská farma (Manor Farm) v Anglii, 30.–40. léta 20. století (alegoricky dějiny SSSR 1917–1943)"),
+    ("Vydáno:", "1945 (psáno za 2. SV, obtížně hledal vydavatele – SSSR byl spojenec)"),
 ]
 
-# --- Sekce KOMPOZICE A JAZYK ---
 COMPOSITION_KV = [
-    ("Kompozice:", "..."),
-    ("Vyprávěč:", "ich-forma / er-forma / ..."),
-    ("Promluvy:", "přímá řeč, dialogy, ..."),
+    ("Kompozice:", "10 kapitol, chronologický postup, rámcové prvky (farma na začátku i na konci)"),
+    ("Vyprávěč:", "Er-forma – vševědoucí vnější vypravěč, nezúčastněný pozorovatel"),
+    ("Promluvy:", "Přímá řeč (projevy prasat, hesla), nepřímá řeč, popisy"),
 ]
 COMPOSITION_BULLETS = [
-    # odrážky pod KV tabulkou
-    "<b>Jazyk</b> – ...",
-    "<b>Kontrast</b> – ...",
-    "<b>Gradace</b> – ...",
+    "<b>Alegorie (jinotaj)</b> – každé zvíře = reálná postava/skupina z dějin SSSR",
+    "<b>Bajka</b> – zvířata jednají jako lidé, text má poučný charakter",
+    "<b>Satira a ironie</b> – postupné zrazování revolučních ideálů, měnění přikázání",
+    "<b>Gradace</b> – prasata se postupně stávají lidmi (šaty, alkohol, chůze po dvou)",
+    "<b>Kontrast</b> – počáteční nadšení z revoluce vs. výsledný teror; heslo „všichni rovni“ vs. realita",
 ]
-TIP_TEXT = "Tip pro ústní zkoušku – klíčová informace k zapamatování."
+TIP_TEXT = "Farma zvířat je alegorií dějin SSSR – každé zvíře odpovídá konkrétní historické postavě nebo skupině. Na zkoušce vysvětli paralely: Napoleon = Stalin, Kuliš = Trockij, Major = Lenin/Marx, psi = tajná policie, ovce = nevzdělaný lid."
 
-# --- Sekce POSTAVY ---
-# 2 hlavní postavy (velké boxy)
-MAIN_CHAR_1 = ("Jméno 1", "Popis hlavní postavy s <b>tučnými</b> klíčovými slovy.")
-MAIN_CHAR_2 = ("Jméno 2", "Popis druhé hlavní postavy.")
-# Vedlejší postavy (tabulka)
+MAIN_CHAR_1 = ("Napoleon", "Kanec – hlavní záporná postava. Chytrý, lstivý, málomluvný, mocichtivý. Postupně přebírá veškerou moc, vyžene Kuliše, vychovává psy jako svou tajnou policii. <b>Alegorie Stalina</b> – buduje kult osobnosti, mění pravidla ve svůj prospěch, stává se diktátorem.")
+MAIN_CHAR_2 = ("Kuliš", "Kanec – inteligentní, nadšený, plný nápadů (větrný mlýn, vzdělávání). Chce skutečně zlepšit život na farmě. Napoleon ho poštve psy a vyžene. Poté je obviňován ze všech problémů farmy. <b>Alegorie Trockého</b> – revolucionář, který prohrál boj o moc se Stalinem.")
+
 SIDE_CHARACTERS = [
-    # (jméno, popis)
-    ("Postava A", "Krátký popis"),
-    ("Postava B", "Krátký popis"),
-    ("Postava C", "Krátký popis"),
-    ("Postava D", "Krátký popis"),
+    ("Major", "Starý kanec, respektovaný. Před smrtí vyzve ke vzpouře proti lidem. Alegorie Lenina a Marxe"),
+    ("Pištík", "Vepř – Napoleonův propagandista. Manipuluje, překrucuje fakta, přepisuje přikázání. Alegorie sovětské propagandy"),
+    ("Boxer", "Tažný kůň – nejpracovitější, oddaný, heslo „Budu pracovat ještě víc!“ Nakonec prodán na jatka. Alegorie prostého pracujícího lidu"),
+    ("Molina", "Klisna – marnivá, chce stuhy a cukr. Odejde k lidem. Alegorie buržoazie, která utekla ze SSSR"),
+    ("Benjamín", "Osel – cynický, chytrý, ale pasivní. Vše vidí, nic nedělá. Alegorie intelektuálů / autora (Orwell)"),
+    ("Ovce", "Tupě opakují hesla „Čtyři nohy dobré, dvě špatné!“. Alegorie manipulované masy"),
+    ("Psi", "Napoleonovi bodyguardi. Vychováni od štěňat k poslušnosti. Alegorie tajné policie (NKVD)"),
+    ("Pan Jones", "Původní majitel farmy. Opilec, zanedbává zvířata. Alegorie cara Mikuláše II."),
 ]
 
-# --- Sekce DĚJ ---
 PLOT_BLOCKS = [
-    # (nadpis bloku, text děje) – 4–5 bloků
-    ("Úvod / Expozice", "Co se děje na začátku..."),
-    ("Zápletka", "Hlavní konflikt..."),
-    ("Vyvrcholení", "Klimax příběhu..."),
-    ("Závěr", "Rozuzlení..."),
+    ("Vzpoura", "Na Panské farmě starý kanec Major přednese projev o útlaku lidmi a naučí zvířata píseň Zvířata Anglie. Po jeho smrti zvířata vyženou opilého pana Jonese. Farmu přejmenují na Zvířecí farmu. Prasata sepíší 7 přikázání animalismu – hlavní: „Všechna zvířata jsou si rovna.“"),
+    ("Budování", "Prasata se ujímají vedení (umí číst a psát). Napoleon a Kuliš se přou o směřování farmy. Kuliš navrhuje stavbu větrného mlýna. Zvířata tvrdě pracují, věří ve společné dobro. Jones se pokusí farmu dobýt zpět – zvířata ho odrazí (Bitva u kravína)."),
+    ("Převrat", "Napoleon poštve vycvičené psy na Kuliše a vyžene ho z farmy. Stává se jediným vůdcem. Přikáže stavbu mlýna (Kulišův nápad si přivlastní). Pištík přesvědčuje zvířata, že Kuliš byl od začátku zrádce. Začínají čistky – „zrádci“ jsou popraveni psy. Přikázání se tajně mění."),
+    ("Úpadek", "Prasata se stěhují do domu, spí v postelích, pijí alkohol – vše zakázáno, ale přikázání jsou přepsána (např. „nesmí spát v posteli s povlečením“). Boxer se nadře k smrti – Napoleon ho prodá řezníkovi a za peníze koupí whisky. Pištík tvrdí, že Boxer zemřel v nemocnici."),
+    ("Závěr", "Prasata chodí po dvou nohách, nosí šaty, obchodují s lidmi. Na farmě visí jediné přikázání: „Všechna zvířata jsou si rovna, ale některá jsou si rovnější.“ Napoleon pozve farmáře na hostinu, hrají poker. Zvířata se dívají oknem a <b>nedokážou rozeznat prasata od lidí</b>."),
 ]
 
-# --- Sekce HLAVNÍ MYŠLENKY ---
 THEMES = [
-    "<b>Hlavní téma</b> – vysvětlení",
-    "<b>Další téma</b> – vysvětlení",
-    "<b>Další téma</b> – vysvětlení",
+    "<b>Zrada revoluce</b> – revoluce požírá vlastní děti; ideály se zvrhnou v novou tyranii",
+    "<b>Kritika totalitarismu</b> – konkrétně stalinismu, ale obecně každé diktatury",
+    "<b>Propaganda a manipulace</b> – Pištík mění dějiny, přepisuje pravidla, dav tomu věří",
+    "<b>Moc korumpuje</b> – „Absolutní moc korumpuje absolutně“ – prasata se stávají tím, proti čemu bojovala",
+    "<b>Pasivita mas</b> – ovce tupě opakují hesla, Boxer slepě pracuje, Benjamín nic nedělá",
+    "<b>Alegorie SSSR</b> – celý příběh mapuje dějiny od revoluce 1917 po Teheránskou konferenci 1943",
 ]
 
-# --- Sekce LITERÁRNÍ KONTEXT ---
 CONTEXT_BULLETS = [
-    "<b>Směr/období</b> (doplnit)",
-    "Zařazení autora...",
-    "Další kontext...",
+    "<b>Antiutopická literatura</b> (dystopie) – 1. polovina 20. století",
+    "Reakce na vzestup totalitních režimů (fašismus, stalinismus) ve 20.–40. letech",
+    "Varování před zneužitím moci, propagandy a ideologie",
+    "Orwell = jeden z nejvýznamnějších autorů politické satiry 20. století",
 ]
 CONTEXT_TABLE = [
-    # (autor, dílo, kontext/země)
-    ("Autor 1", "Dílo 1", "Země/směr"),
-    ("Autor 2", "Dílo 2", "Země/směr"),
-    ("Autor 3", "Dílo 3", "Země/směr"),
+    ("G. Orwell", "1984", "Anglie – dystopie"),
+    ("A. Huxley", "Konec civilizace", "Anglie – dystopie"),
+    ("R. Bradbury", "451 stupňů Fahrenheita", "USA – dystopie"),
+    ("W. Golding", "Pán much", "Anglie – alegorie"),
+    ("J. Hašek", "Osudy dobrého vojáka Švejka", "ČR – satira"),
 ]
 
-# --- Sekce RYCHLÝ PŘEHLED ---
 QUICK_REVIEW = [
-    # (otázka, odpověď)
-    ("Autor", "Jméno (rok–rok), národnost"),
-    ("Žánr", "..."),
-    ("Směr", "..."),
-    ("Druh", "Epika / Drama / Lyrika"),
-    ("Vyprávěč", "ich-forma / er-forma / drama"),
-    ("Kde/kdy", "místo, čas"),
-    ("Téma", "..."),
-    ("Postavy", "výčet klíčových postav"),
-    ("Klíčové", "nejdůležitější fakt k zapamatování"),
-    ("Jazyk", "..."),
-    ("Kontext", "autoři stejného směru/období"),
+    ("Autor", "George Orwell (1903–1950), britský spisovatel, vl. jm. Eric A. Blair"),
+    ("Žánr", "Alegorická bajka / antiutopická novela"),
+    ("Směr", "Antiutopická literatura, pol. satira (1. pol. 20. stol.)"),
+    ("Druh", "Epika (próza)"),
+    ("Vyprávěč", "Er-forma (vševědoucí)"),
+    ("Kde/kdy", "Panská farma, Anglie, 30.–40. léta (alegoricky SSSR 1917–1943)"),
+    ("Téma", "Zrada revoluce, totalitarismus, propaganda"),
+    ("Postavy", "Napoleon (Stalin), Kuliš (Trockij), Major (Lenin), Boxer, Pištík"),
+    ("Citát", "„Všechna zvířata jsou si rovna, ale některá jsou si rovnější.“"),
+    ("Jazyk", "Er-forma, alegorie, satira, ironie, gradace, bajka"),
+    ("Kontext", "Orwell (1984), Huxley, Bradbury, Golding"),
 ]
 
 
 # ============================================================
-# ████████████████████████████████████████████████████████████
-# ████  ŠABLONA – NEMĚNIT (generuje PDF z dat výše)  ████████
-# ████████████████████████████████████████████████████████████
+# ŠABLONA – generuje PDF z dat výše
 # ============================================================
 
 doc = SimpleDocTemplate(
@@ -201,7 +185,6 @@ st_plot_b = S('PB', fontSize=7.5, alignment=TA_JUSTIFY, leading=10.5)
 story = []
 sp = lambda h=4: Spacer(1, h)
 
-# --- Helper: hlavička dokumentu ---
 def make_header():
     t = Table([
         [Paragraph(TITLE, st_title)],
@@ -214,7 +197,6 @@ def make_header():
     ]))
     return t
 
-# --- Helper: barevný nadpis sekce ---
 def sec(text, color):
     t = Table([[Paragraph(text, st_sec)]], colWidths=[W])
     t.setStyle(TableStyle([
@@ -225,7 +207,6 @@ def sec(text, color):
     ]))
     return t
 
-# --- Helper: klíč-hodnota tabulka ---
 def kv(pairs, bg, border, kw=36*mm):
     rows = [[Paragraph(f"<b>{k}</b>", st_key), Paragraph(v, st_body)] for k, v in pairs]
     t = Table(rows, colWidths=[kw, W - kw])
@@ -241,7 +222,6 @@ def kv(pairs, bg, border, kw=36*mm):
     ]))
     return t
 
-# --- Helper: bullet list ---
 def bl(items, bg, mark="\u2022"):
     rows = [[Paragraph(f"{mark} {i}", st_body)] for i in items]
     t = Table(rows, colWidths=[W])
@@ -254,7 +234,6 @@ def bl(items, bg, mark="\u2022"):
     ]))
     return t
 
-# --- Helper: TIP box ---
 def tipbox(text):
     t = Table([[Paragraph(f"<b>TIP:</b> {text}", st_tip)]], colWidths=[W])
     t.setStyle(TableStyle([
@@ -267,7 +246,6 @@ def tipbox(text):
     ]))
     return t
 
-# --- Helper: character box (hlavní postava) ---
 def cbox(name, desc, col, bg):
     t = Table([[
         Paragraph(f"<b>{name}</b>", S(f'c{id(name)}', fontName='DJB', fontSize=8.5, textColor=col, leading=11)),
@@ -289,11 +267,10 @@ def cbox(name, desc, col, bg):
 # SESTAVENÍ DOKUMENTU
 # ============================================================
 
-# ---- HLAVIČKA ----
 story.append(make_header())
 story.append(sp(6))
 
-# ---- AUTOR ----
+# AUTOR
 story.append(KeepTogether([
     sec(AUTHOR_SECTION_TITLE, C_INDIGO),
     sp(),
@@ -307,7 +284,7 @@ story.append(KeepTogether([
 ]))
 story.append(sp(6))
 
-# ---- ZÁKLADNÍ ÚDAJE ----
+# ZÁKLADNÍ ÚDAJE
 story.append(KeepTogether([
     sec("ZÁKLADNÍ ÚDAJE O DÍLE", C_BLUE),
     sp(),
@@ -315,7 +292,7 @@ story.append(KeepTogether([
 ]))
 story.append(sp(6))
 
-# ---- KOMPOZICE A JAZYK ----
+# KOMPOZICE A JAZYK
 story.append(KeepTogether([
     sec("KOMPOZICE A JAZYK", C_TEAL),
     sp(),
@@ -327,7 +304,7 @@ story.append(KeepTogether([
 ]))
 story.append(sp(6))
 
-# ---- POSTAVY ----
+# POSTAVY
 char_elements = [
     sec("POSTAVY", C_PURPLE),
     sp(),
@@ -336,7 +313,6 @@ char_elements = [
     cbox(MAIN_CHAR_2[0], MAIN_CHAR_2[1], C_PURPLE, C_PURPLE_L),
     sp(3),
 ]
-# Tabulka vedlejších postav
 char_rows = [[Paragraph("<b>Postava</b>", st_wh), Paragraph("<b>Popis</b>", st_wh)]]
 for name, desc in SIDE_CHARACTERS:
     char_rows.append([Paragraph(f"<b>{name}</b>", st_smallb), Paragraph(desc, st_small)])
@@ -357,7 +333,7 @@ char_elements.append(
 story.append(KeepTogether(char_elements))
 story.append(sp(6))
 
-# ---- DĚJ ----
+# DĚJ
 story.append(sec("DĚJ", C_RED))
 story.append(sp())
 for title, text in PLOT_BLOCKS:
@@ -383,7 +359,7 @@ for title, text in PLOT_BLOCKS:
     ]))
 story.append(sp(4))
 
-# ---- HLAVNÍ MYŠLENKY ----
+# HLAVNÍ MYŠLENKY
 story.append(KeepTogether([
     sec("HLAVNÍ MYŠLENKY", C_GREEN),
     sp(),
@@ -391,7 +367,7 @@ story.append(KeepTogether([
 ]))
 story.append(sp(6))
 
-# ---- LITERÁRNÍ KONTEXT ----
+# LITERÁRNÍ KONTEXT
 ctx_rows = [[Paragraph("<b>Autor</b>", st_wh), Paragraph("<b>Dílo</b>", st_wh), Paragraph("<b>Kontext</b>", st_wh)]]
 for a, d, c in CONTEXT_TABLE:
     ctx_rows.append([Paragraph(f"<b>{a}</b>", st_smallb), Paragraph(d, st_small), Paragraph(c, st_small)])
@@ -415,7 +391,7 @@ story.append(KeepTogether([
 ]))
 story.append(sp(6))
 
-# ---- RYCHLÝ PŘEHLED ----
+# RYCHLÝ PŘEHLED
 qr_rows = [[
     Paragraph("<b>?</b>", S('QH1', fontName='DJB', fontSize=8, textColor=white, leading=11)),
     Paragraph("<b>Odpověď</b>", S('QH2', fontName='DJB', fontSize=8, textColor=white, leading=11)),
@@ -425,7 +401,7 @@ for q, a in QUICK_REVIEW:
 story.append(KeepTogether([
     sec("RYCHLÝ PŘEHLED", C_DARK),
     sp(),
-    Table(qr_rows, colWidths=[22*mm, W - 22*mm],
+    Table(qr_rows, colWidths=[24*mm, W - 24*mm],
         style=TableStyle([
             ('BACKGROUND', (0,0), (-1,0), C_DARK),
             ('ROWBACKGROUNDS', (0,1), (-1,-1), [C_DARK_L, white]),
@@ -433,7 +409,8 @@ story.append(KeepTogether([
             ('BOTTOMPADDING', (0,0), (-1,-1), 3.5),
             ('LEFTPADDING', (0,0), (-1,-1), 6),
             ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
-            ('LINEBELOW', (0,1), (-1,-2), 0.3, C_GRAY),
+            ('LINEBELOW', (0,0), (-1,-1), 0.3, C_GRAY),
+            ('LINEBEFORE', (1,0), (1,-1), 0.3, C_GRAY),
             ('BOX', (0,0), (-1,-1), 1.5, C_DARK),
         ]),
     ),

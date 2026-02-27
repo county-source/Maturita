@@ -52,7 +52,7 @@ W = PAGE_W - 2*MARGIN
 # ============================================================
 # DATA
 # ============================================================
-OUTPUT_FILE = "/home/jakub/Maturita/moje-rozbory/Kulicka_rozbor.pdf"
+OUTPUT_FILE = "/home/jakub/Maturita/rozbory/moje-rozbory/Kulicka_rozbor.pdf"
 
 TITLE = "KULI\u010cKA"
 AUTHOR_SUBTITLE = "Guy de Maupassant"
