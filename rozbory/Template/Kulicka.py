@@ -91,7 +91,7 @@ COMPOSITION_BULLETS = [
     "<b>Realismus</b> \u2013 p\u0159esn\u00fd, detailn\u00ed popis postav, prost\u0159ed\u00ed a situac\u00ed",
     "<b>Ironie a satira</b> \u2013 vypr\u00e1v\u011b\u010d ironicky komentuje pokrytectv\u00ed m\u011b\u0161\u0165\u00e1k\u016f",
     "<b>Kontrast</b> \u2013 prostitutka je mor\u00e1ln\u011b nadřazen\u00e1 (ob\u011btavost) vs. m\u011b\u0161\u0165\u00e1ci (pokrytci)",
-    "<b>Symbolika</b> \u2013 dostavn\u00edk jako mikrokosmos spole\u010dnosti, j\u00eddlo jako symbol solidarity/v\u010d\u011b\u010dnosti",
+    "<b>Symbolika</b> \u2013 dostavn\u00edk jako mikrokosmos spole\u010dnosti, j\u00eddlo jako symbol solidarity/vd\u011b\u010dnosti",
     "<b>Pointa</b> \u2013 z\u00e1v\u011bre\u010dn\u00e1 sc\u00e9na vyhrocuje pokrytectv\u00ed \u2013 Kuli\u010dka pl\u00e1\u010de, ostatn\u00ed j\u00ed pohrdaj\u00ed",
 ]
 TIP_TEXT = "D\u016fle\u017eit\u00e9 je pochopit kontrast: Kuli\u010dka je prostitutka, ale z\u00e1rove\u0148 nejslu\u0161n\u011bj\u0161\u00ed a nejob\u011btav\u011bj\u0161\u00ed postava. M\u011b\u0161\u0165\u00e1ci, kte\u0159\u00ed j\u00ed pohrdaj\u00ed, jsou pokrytci \u2013 vyu\u017eij\u00ed ji a pak se od n\u00ed odvrátí. Maupassant tím kritizuje celou spole\u010dnost."
