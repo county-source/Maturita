@@ -365,7 +365,7 @@ story.append(KeepTogether([
     sp(),
     bl(CONTEXT_BULLETS, C_ORANGE_L),
     sp(3),
-    Table(ctx_rows, colWidths=[28*mm, W - 48*mm, 20*mm],
+    Table(ctx_rows, colWidths=[28*mm, W - 56*mm, 28*mm],
         style=TableStyle([
             ('BACKGROUND', (0,0), (-1,0), C_ORANGE),
             ('ROWBACKGROUNDS', (0,1), (-1,-1), [white, C_ORANGE_L]),
@@ -389,7 +389,7 @@ for q, a in QUICK_REVIEW:
 story.append(KeepTogether([
     sec("RYCHL\u00dd P\u0158EHLED", C_DARK),
     sp(),
-    Table(qr_rows, colWidths=[24*mm, W - 24*mm],
+    Table(qr_rows, colWidths=[26*mm, W - 26*mm],
         style=TableStyle([
             ('BACKGROUND', (0,0), (-1,0), C_DARK),
             ('ROWBACKGROUNDS', (0,1), (-1,-1), [C_DARK_L, white]),
